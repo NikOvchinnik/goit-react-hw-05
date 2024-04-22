@@ -1,0 +1,39 @@
+.containerMovieDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.containerMovieInfo {
+    display: flex;
+    gap: 20px;
+}
+
+.movieImg {
+    max-width: 200px;
+}
+
+.containerMovieText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.listInformation {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.itemInformation {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    border: 1px solid rgb(244, 158, 52);
+    border-radius: 8px;
+    cursor: pointer;
+    color: rgb(244, 158, 52);
+}
+

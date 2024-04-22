@@ -1,0 +1,28 @@
+.moveList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.moveItem {
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: blanchedalmond;
+}
+
+.moveContainer {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.moveImg {
+  border-start-end-radius: 8px;
+  border-start-start-radius: 8px;
+}
+
+.moveTitle {
+  padding: 10px;
+}

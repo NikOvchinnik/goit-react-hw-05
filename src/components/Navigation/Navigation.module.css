@@ -1,0 +1,33 @@
+.headerContainer {
+    display: flex;
+    gap: 60px;
+    background-color: rgb(244, 158, 52);
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
+.headerIconContainer {
+    display: flex;
+}
+
+.headerIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.headerNavigation {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.headerLink:hover {
+    border-bottom: 2px solid white;
+}
+
+.active {
+    border-bottom: 2px solid white;
+}
+

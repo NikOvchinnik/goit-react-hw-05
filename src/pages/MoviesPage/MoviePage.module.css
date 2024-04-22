@@ -1,0 +1,32 @@
+.moviesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.moviesForm {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.moviesInput {
+  padding: 8px 10px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.moviesBtn {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: rgb(244, 158, 52);
+  color: white;
+}
+
+.moviesBtn:hover {
+  border: 1px solid rgb(244, 158, 52);
+  background-color: white;
+  color: rgb(244, 158, 52);
+}

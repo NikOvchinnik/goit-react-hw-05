@@ -1,0 +1,9 @@
+.listMovieCast {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.itemMovieCast {
+    width: 150px;
+}
