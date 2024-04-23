@@ -3,6 +3,7 @@ import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import Loader from "../../components/Loader/Loader";
 import { fetchMovies } from "../../service/api";
 import { NavLink, Outlet, useLocation, useParams } from "react-router-dom";
+import clsx from "clsx";
 import style from "./MovieDetailsPage.module.css";
 import GoBack from "../../components/GoBack/GoBack";
 
@@ -34,6 +35,10 @@ const MovieDetailsPage = () => {
     ? `https://image.tmdb.org/t/p/w200${movie.poster_path}`
     : "";
 
+  const linkInformation = ({ isActive }) => {
+    return clsx(style.linkInformation, isActive && style.active);
+  };
+
   return (
     <>
       {loading && <Loader />}
@@ -63,7 +68,7 @@ const MovieDetailsPage = () => {
                 <NavLink
                   to="cast"
                   state={location.state}
-                  className={style.itemInformation}
+                  className={linkInformation}
                 >
                   Cast
                 </NavLink>
@@ -72,7 +77,7 @@ const MovieDetailsPage = () => {
                 <NavLink
                   to="reviews"
                   state={location.state}
-                  className={style.itemInformation}
+                  className={linkInformation}
                 >
                   Reviews
                 </NavLink>
